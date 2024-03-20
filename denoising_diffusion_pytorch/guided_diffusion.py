@@ -593,7 +593,7 @@ class GaussianDiffusion(nn.Module):
         model_mean, posterior_variance, posterior_log_variance = self.q_posterior(x_start = x_start, x_t = x, t = t)
         return model_mean, posterior_variance, posterior_log_variance, x_start
      
-    def condition_mean(self, cond_fn, mean,variance, x, t, guidance_kwargs=None):
+    def condition_mean(self, cond_fn, mean, variance, x, t, guidance_kwargs=None):
         """
         Compute the mean for the previous step, given a function cond_fn that
         computes the gradient of a conditional log probability with respect to

@@ -13,7 +13,7 @@ from torch.nn import Module, ModuleList
 from torch.optim.lr_scheduler import LambdaLR
 import torch.nn.functional as F
 
-from einops import rearrange, repeat, pack, unpack
+# from einops import rearrange, repeat, pack, unpack
 
 from denoising_diffusion_pytorch.attend import Attend
 
